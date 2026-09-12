@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Karla } from "next/font/google";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 const display = Fraunces({
@@ -18,25 +20,29 @@ const body = Karla({
 export const metadata: Metadata = {
   title: "The Philosophical Cafe | Chetna · Philosophical Counselor",
   description:
-    "One-on-one philosophical counselling with Chetna, M.A. Philosophy (JNU). A quiet place to think through work, meaning, decisions and the questions you keep carrying. Sessions online, across India.",
+    "An unhurried hour to sort out the noise. One-on-one philosophical counselling with Chetna, online across India. Pay what feels right.",
   metadataBase: new URL("https://thephilosophicalcafe.in"),
   openGraph: {
     title: "The Philosophical Cafe",
     description:
-      "A safe space to unlearn the noise. One-on-one philosophical counselling, online across India.",
+      "An unhurried hour to sort out the noise. Practical philosophy, one conversation at a time.",
     type: "website",
     locale: "en_IN",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f6f2eb",
+  themeColor: "#fcfaf7",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Nav />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
