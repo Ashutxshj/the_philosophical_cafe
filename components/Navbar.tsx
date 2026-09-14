@@ -47,8 +47,8 @@ export default function Navbar() {
             <Image src="/tpc_logo.jpeg" alt="The Philosophical Cafe" width={40} height={40} className="h-full w-full object-cover" />
           </span>
           <span className="font-display text-[17px] leading-tight tracking-tight text-ink">
-            The Philosophical
-            <span className="block text-[15px] italic text-clay">Cafe</span>
+            The Philosophical{" "}
+            <span className="italic text-clay">Cafe</span>
           </span>
         </Link>
 

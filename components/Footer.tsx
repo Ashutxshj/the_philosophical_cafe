@@ -62,7 +62,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col gap-2 border-t border-sand/70 pt-6 text-[13px] text-faint sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} The Philosophical Cafe · Online, across India</p>
-          <p>Sessions on Google Meet · 45–60 minutes</p>
+          <p>Sessions on Google Meet · 45-60 minutes</p>
         </div>
       </div>
     </footer>
