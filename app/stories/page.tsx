@@ -31,7 +31,7 @@ export default function StoriesPage() {
           </div>
         </Reveal>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="masonry mt-16">
           {quotes.map((q, i) => (
             <Reveal key={q.who + i} delay={(i % 3) * 100}>
               <ExpandableQuote quote={q} />

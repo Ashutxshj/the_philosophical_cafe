@@ -8,12 +8,12 @@ export default function ExpandableQuote({ quote }: { quote: Quote }) {
   const isLong = quote.text.length > 200;
 
   return (
-    <figure className="flex h-full flex-col justify-between rounded-[1.6rem] border border-sand bg-white p-8 transition-all duration-500 hover:-translate-y-1 hover:border-clay/25">
+    <figure className="rounded-[1.6rem] border border-sand bg-white p-8 transition-all duration-500 hover:-translate-y-1 hover:border-clay/25">
       <div>
-        <blockquote className={ont-display text-[16px] leading-[1.8] text-ink/85 transition-all duration-300  + (!expanded && isLong ? "line-clamp-6" : "")}>
-          <span className="text-clay">ì</span>
+        <blockquote className={"font-display text-[16px] leading-[1.8] text-ink/85 transition-all duration-300 " + (!expanded && isLong ? "line-clamp-6" : "")}>
+          <span className="text-clay">‚Äú</span>
           {quote.text}
-          <span className="text-clay">î</span>
+          <span className="text-clay">‚Äù</span>
         </blockquote>
         {isLong && (
           <button
