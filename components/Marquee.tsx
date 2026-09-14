@@ -22,7 +22,7 @@ export default function Marquee() {
         </div>
       </div>
       <p className="mt-10 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-faint">
-        30+ conversations, in their words
+        100+ conversations, in their words
       </p>
     </section>
   );

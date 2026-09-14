@@ -6,7 +6,7 @@ import { quotes } from "@/lib/testimonials";
 
 export const metadata: Metadata = {
   title: "In their words - The Philosophical Cafe",
-  description: "What people carry out of the cafe. 30+ conversations, in their own words.",
+  description: "What people carry out of the cafe. 100+ conversations, in their own words.",
 };
 
 const shots = Array.from({ length: 33 }, (_, i) =>
@@ -24,7 +24,7 @@ export default function StoriesPage() {
               In their words
             </h1>
             <p className="mt-5 text-[15.5px] leading-[1.85] text-mute">
-              Over thirty conversations so far. Some names are withheld - the people
+              Over a hundred conversations so far. Some names are withheld - the people
               asked, and the cafe keeps its quiet.
             </p>
           </div>
