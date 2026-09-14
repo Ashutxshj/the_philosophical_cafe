@@ -52,7 +52,7 @@ export default function Home() {
                 href="/book"
                 className="rounded-full bg-ink px-7 py-3.5 text-[15px] tracking-wide text-[#f7f2e9] transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay "
               >
-                Book a session - from ₹300
+                Book a session
               </Link>
               <Link
                 href="/how-it-works"
@@ -111,11 +111,11 @@ export default function Home() {
                   i === 2 ? "border-clay/30 bg-cream" : "border-sand bg-white"
                 }`}
               >
-                <h3 className={`font-display text-[22px] ${i === 2 ? "text-clay" : "text-ink"}`}>{c.t}</h3>
-                <ul className="mt-5 space-y-3">
+                <h3 className={`font-display text-[22px] pb-4 mb-4 border-b ${i === 2 ? "text-clay border-clay/20" : "text-ink border-sand/70"}`}>{c.t}</h3>
+                <ul className="space-y-3.5">
                   {c.items.map((it) => (
                     <li key={it} className="flex items-start gap-3 text-[14.5px] text-mute">
-                      <span className={`mt-[7px] h-1 w-1 shrink-0 rounded-full ${i === 2 ? "bg-clay" : "bg-faint"}`} />
+                      <span className={`mt-[6.5px] h-1.5 w-1.5 shrink-0 rounded-full ${i === 2 ? "bg-clay" : "bg-clay/70"}`} />
                       {it}
                     </li>
                   ))}
