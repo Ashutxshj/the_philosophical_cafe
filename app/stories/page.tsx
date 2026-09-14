@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Marquee from "@/components/Marquee";
 import Reveal from "@/components/Reveal";
+import ExpandableQuote from "@/components/ExpandableQuote";
 import { quotes } from "@/lib/testimonials";
 
 export const metadata: Metadata = {
@@ -33,17 +34,7 @@ export default function StoriesPage() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {quotes.map((q, i) => (
             <Reveal key={q.who + i} delay={(i % 3) * 100}>
-              <figure className="flex h-full flex-col justify-between rounded-[1.6rem] border border-sand bg-white p-8 transition-all duration-500 hover:-translate-y-1 hover:border-clay/25 ">
-                <blockquote className="font-display text-[16px] leading-[1.8] text-ink/85">
-                  <span className="text-clay">“</span>
-                  {q.text}
-                  <span className="text-clay">”</span>
-                </blockquote>
-                <figcaption className="mt-6">
-                  <p className="text-[13px] font-semibold text-ink">{q.who}</p>
-                  {q.context && <p className="mt-0.5 text-[12.5px] text-faint">{q.context}</p>}
-                </figcaption>
-              </figure>
+              <ExpandableQuote quote={q} />
             </Reveal>
           ))}
         </div>

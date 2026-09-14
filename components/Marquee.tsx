@@ -5,10 +5,13 @@ export default function Marquee() {
   return (
     <section className="marquee-wrap overflow-hidden border-y border-sand/70 bg-cream/60 py-12">
       <div className="marquee-mask">
-        <div className="animate-marquee flex w-max items-start gap-16 pr-16">
+        <div 
+          className="animate-marquee flex w-max items-start gap-16 pr-16"
+          style={{ animationDuration: `${row.length * 3.5}s` }}
+        >
           {row.map((q, i) => (
             <figure key={i} className="w-[320px] shrink-0 sm:w-[440px]">
-              <blockquote className="font-display text-[16.5px] leading-[1.75] text-ink/85">
+              <blockquote className="font-display text-[16.5px] leading-[1.75] text-ink/85 line-clamp-5">
                 <span className="text-clay">“</span>
                 {q.text}
                 <span className="text-clay">”</span>
