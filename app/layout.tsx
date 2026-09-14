@@ -17,7 +17,7 @@ const karla = Karla({
 });
 
 export const metadata: Metadata = {
-  title: "The Philosophical Cafe — A safe space to unlearn the noise",
+  title: "The Philosophical Cafe - A safe space to unlearn the noise",
   description:
     "One-on-one philosophical counselling with Chetna. Honest, unhurried online conversations for the questions about work, meaning, identity and everything in between. Sessions across India, from ₹300.",
 };

@@ -37,13 +37,13 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "border-b border-sand/70 bg-paper/85 backdrop-blur-md"
+          ? "border-b border-sand/70 bg-paper "
           : "border-b border-transparent bg-transparent"
       }`}
     >
       <nav className="mx-auto flex h-[72px] max-w-6xl items-center justify-between px-5 sm:px-8">
         <Link href="/" className="group flex items-center gap-3">
-          <span className="block h-10 w-10 overflow-hidden rounded-full border border-sand bg-white shadow-sm transition-transform duration-500 group-hover:rotate-[14deg]">
+          <span className="block h-10 w-10 overflow-hidden rounded-full border border-sand bg-white  transition-transform duration-500 group-hover:rotate-[14deg]">
             <Image src="/tpc_logo.jpeg" alt="The Philosophical Cafe" width={40} height={40} className="h-full w-full object-cover" />
           </span>
           <span className="font-display text-[17px] leading-tight tracking-tight text-ink">
@@ -66,7 +66,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/book"
-            className="rounded-full bg-ink px-5 py-2.5 text-[14px] tracking-wide text-[#f7f2e9] transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay hover:shadow-[0_10px_24px_-10px_rgba(162,78,51,0.55)]"
+            className="rounded-full bg-ink px-5 py-2.5 text-[14px] tracking-wide text-[#f7f2e9] transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay "
           >
             Book a session
           </Link>
@@ -75,7 +75,7 @@ export default function Navbar() {
         <button
           aria-label="Menu"
           onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 flex-col items-center justify-center gap-[5px] rounded-full border border-sand bg-white/70 md:hidden"
+          className="flex h-10 w-10 flex-col items-center justify-center gap-[5px] rounded-full border border-sand bg-white md:hidden"
         >
           <span className={`h-[1.5px] w-4 bg-ink transition-transform duration-300 ${open ? "translate-y-[3.2px] rotate-45" : ""}`} />
           <span className={`h-[1.5px] w-4 bg-ink transition-transform duration-300 ${open ? "-translate-y-[3.2px] -rotate-45" : ""}`} />
@@ -83,7 +83,7 @@ export default function Navbar() {
       </nav>
 
       <div
-        className={`overflow-hidden border-t border-sand/60 bg-paper/95 backdrop-blur-md transition-all duration-500 md:hidden ${
+        className={`overflow-hidden border-t border-sand/60 bg-paper  transition-all duration-500 md:hidden ${
           open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >

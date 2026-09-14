@@ -14,7 +14,7 @@ export default function Marquee() {
                 <span className="text-clay">”</span>
               </blockquote>
               <figcaption className="mt-4 text-[11.5px] font-semibold uppercase tracking-[0.18em] text-faint">
-                — {q.who}
+                - {q.who}
                 {q.context ? <span className="normal-case tracking-normal text-faint/80"> · {q.context}</span> : null}
               </figcaption>
             </figure>

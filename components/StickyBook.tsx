@@ -33,11 +33,11 @@ export default function StickyBook() {
         show ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-6 opacity-0"
       }`}
     >
-      <div className="toastin relative flex items-center gap-4 rounded-2xl border border-sand bg-white/90 py-3 pl-4 pr-3 shadow-[0_18px_40px_-18px_rgba(62,48,32,0.35)] backdrop-blur-md">
+      <div className="toastin relative flex items-center gap-4 rounded-2xl border border-sand bg-white py-3 pl-4 pr-3  ">
         <div className="max-w-[220px]">
           <p className="text-[13.5px] leading-snug text-ink">
             Liking the quiet here?
-            <span className="text-mute"> Pull up a chair — first conversation from</span>
+            <span className="text-mute"> Pull up a chair - first conversation from</span>
             <span className="font-semibold text-clay"> ₹300</span>
           </p>
         </div>

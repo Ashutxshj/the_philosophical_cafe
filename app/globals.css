@@ -30,10 +30,7 @@ body {
   color: var(--color-ink);
 }
 
-.grain {
-  background-image: radial-gradient(rgba(120, 100, 70, 0.055) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
+
 
 @keyframes marquee {
   from {
@@ -134,7 +131,7 @@ body {
 
 .field:focus {
   border-color: #d3b28c;
-  box-shadow: 0 0 0 4px rgba(162, 78, 51, 0.08);
+  
   background: #ffffff;
 }
 

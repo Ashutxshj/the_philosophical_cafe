@@ -20,7 +20,7 @@ export const quotes: Quote[] = [
     context: "3 sessions",
   },
   {
-    text: "She doesn't hand you methods or answers — she makes you think deeply, question your own thoughts and beliefs. I found that genuinely engaging.",
+    text: "She doesn't hand you methods or answers - she makes you think deeply, question your own thoughts and beliefs. I found that genuinely engaging.",
     who: "Well Hope client",
   },
   {

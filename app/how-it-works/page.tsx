@@ -3,14 +3,14 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "How it works — The Philosophical Cafe",
+  title: "How it works - The Philosophical Cafe",
 };
 
 const steps = [
   {
     n: "01",
     t: "You fill the form",
-    d: "A few gentle questions — who you are, what's sitting on your mind, when you could talk. You don't need the perfect words or a perfectly defined problem. Half-formed feelings are exactly what this space is for.",
+    d: "A few gentle questions - who you are, what's sitting on your mind, when you could talk. You don't need the perfect words or a perfectly defined problem. Half-formed feelings are exactly what this space is for.",
   },
   {
     n: "02",
@@ -20,7 +20,7 @@ const steps = [
   {
     n: "03",
     t: "The session, on Google Meet",
-    d: "One-on-one, online, anywhere in India. A quiet 45–60 minutes where we take your question seriously — examining the beliefs, assumptions and patterns underneath it, rather than rushing to fix it.",
+    d: "One-on-one, online, anywhere in India. A quiet 45–60 minutes where we take your question seriously - examining the beliefs, assumptions and patterns underneath it, rather than rushing to fix it.",
   },
   {
     n: "04",
@@ -30,14 +30,14 @@ const steps = [
   {
     n: "05",
     t: "Pay what feels right",
-    d: "There is no fixed fee. Before the session you reserve your seat through UPI — ₹300, ₹1,000 or ₹2,000 are suggestions, and you're welcome to adjust the amount. The conversation is what matters.",
+    d: "There is no fixed fee. Before the session you reserve your seat through UPI - ₹300, ₹1,000 or ₹2,000 are suggestions, and you're welcome to adjust the amount. The conversation is what matters.",
   },
 ];
 
 const faqs = [
   {
     q: "Do I need to know philosophy?",
-    a: "Not at all. No prior knowledge of philosophy is needed — only a willingness to think honestly. The ideas are translated into plain language as we go.",
+    a: "Not at all. No prior knowledge of philosophy is needed - only a willingness to think honestly. The ideas are translated into plain language as we go.",
   },
   {
     q: "Is this therapy?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "Is this coaching?",
-    a: "Also no. There are no goals handed to you or productivity systems to adopt. The work is to understand what you actually believe and want — the direction follows from that.",
+    a: "Also no. There are no goals handed to you or productivity systems to adopt. The work is to understand what you actually believe and want - the direction follows from that.",
   },
   {
     q: "What if I don't know what's wrong?",
@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     q: "How do I pay?",
-    a: "After choosing a contribution on the booking form, you'll see a UPI QR. Scan, pay, and upload a screenshot — that confirms your booking.",
+    a: "After choosing a contribution on the booking form, you'll see a UPI QR. Scan, pay, and upload a screenshot - that confirms your booking.",
   },
 ];
 
@@ -72,7 +72,7 @@ export default function HowItWorksPage() {
               How a session unfolds
             </h1>
             <p className="mt-5 text-[15.5px] leading-[1.85] text-mute">
-              From the first form to the last question — here is the whole journey,
+              From the first form to the last question - here is the whole journey,
               with nothing hidden.
             </p>
           </div>
@@ -99,7 +99,7 @@ export default function HowItWorksPage() {
             <h2 className="text-center font-display text-3xl text-ink">Questions people ask quietly</h2>
             <div className="mt-10 space-y-4">
               {faqs.map((f) => (
-                <details key={f.q} className="faq group rounded-2xl border border-sand bg-white/70 px-6 py-5 transition-colors open:bg-cream/50">
+                <details key={f.q} className="faq group rounded-2xl border border-sand bg-white px-6 py-5 transition-colors open:bg-cream/50">
                   <summary className="flex cursor-pointer items-center justify-between gap-4 text-[15.5px] font-semibold text-ink marker:hidden">
                     {f.q}
                     <span className="faq-chev shrink-0 text-[20px] font-light leading-none text-clay transition-transform duration-300">+</span>
@@ -115,7 +115,7 @@ export default function HowItWorksPage() {
           <div className="mt-20 text-center">
             <Link
               href="/book"
-              className="inline-block rounded-full bg-ink px-8 py-4 text-[15px] tracking-wide text-[#f7f2e9] transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay hover:shadow-[0_14px_30px_-12px_rgba(162,78,51,0.6)]"
+              className="inline-block rounded-full bg-ink px-8 py-4 text-[15px] tracking-wide text-[#f7f2e9] transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay "
             >
               Begin with the form
             </Link>

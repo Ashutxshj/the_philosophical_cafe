@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import { quotes } from "@/lib/testimonials";
 
 export const metadata: Metadata = {
-  title: "In their words — The Philosophical Cafe",
+  title: "In their words - The Philosophical Cafe",
   description: "What people carry out of the cafe. 30+ conversations, in their own words.",
 };
 
@@ -24,7 +24,7 @@ export default function StoriesPage() {
               In their words
             </h1>
             <p className="mt-5 text-[15.5px] leading-[1.85] text-mute">
-              Over thirty conversations so far. Some names are withheld — the people
+              Over thirty conversations so far. Some names are withheld - the people
               asked, and the cafe keeps its quiet.
             </p>
           </div>
@@ -33,7 +33,7 @@ export default function StoriesPage() {
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {quotes.map((q, i) => (
             <Reveal key={q.who + i} delay={(i % 3) * 100}>
-              <figure className="flex h-full flex-col justify-between rounded-[1.6rem] border border-sand bg-white/70 p-8 transition-all duration-500 hover:-translate-y-1 hover:border-clay/25 hover:shadow-[0_24px_44px_-34px_rgba(62,48,32,0.45)]">
+              <figure className="flex h-full flex-col justify-between rounded-[1.6rem] border border-sand bg-white p-8 transition-all duration-500 hover:-translate-y-1 hover:border-clay/25 ">
                 <blockquote className="font-display text-[16px] leading-[1.8] text-ink/85">
                   <span className="text-clay">“</span>
                   {q.text}
@@ -57,7 +57,7 @@ export default function StoriesPage() {
               Every note, exactly as it arrived
             </h2>
             <p className="mt-4 text-[14.5px] leading-[1.85] text-mute">
-              Screenshots of the original feedback — unedited, unpolished, and
+              Screenshots of the original feedback - unedited, unpolished, and
               kept with permission.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function StoriesPage() {
         <div className="masonry mt-14">
           {shots.map((src, i) => (
             <Reveal key={src} delay={(i % 3) * 80}>
-              <div className="overflow-hidden rounded-[1.4rem] border border-sand bg-white transition-all duration-500 hover:-translate-y-1 hover:border-clay/25 hover:shadow-[0_24px_44px_-34px_rgba(62,48,32,0.45)]">
+              <div className="overflow-hidden rounded-[1.4rem] border border-sand bg-white transition-all duration-500 hover:-translate-y-1 hover:border-clay/25 ">
                 <Image
                   src={src}
                   alt={`Client feedback ${i + 1}`}
