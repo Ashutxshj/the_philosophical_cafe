@@ -16,8 +16,16 @@ export default function StickyBook() {
   }
 
   useEffect(() => {
-    const raf = requestAnimationFrame(() => setShow(window.scrollY > window.innerHeight * 0.75));
-    const onScroll = () => setShow(window.scrollY > window.innerHeight * 0.75);
+    const onScroll = () => {
+      const pastStart = window.scrollY > window.innerHeight * 0.75;
+      const pricingElem = document.getElementById("pricing-trigger");
+      let pastEnd = false;
+      if (pricingElem) {
+        pastEnd = pricingElem.getBoundingClientRect().top < window.innerHeight;
+      }
+      setShow(pastStart && !pastEnd);
+    };
+    const raf = requestAnimationFrame(onScroll);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => {
       cancelAnimationFrame(raf);

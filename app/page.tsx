@@ -206,6 +206,7 @@ export default function Home() {
       <section className="border-y border-sand/70 bg-cream/50 py-28">
         <div className="mx-auto max-w-6xl px-5 sm:px-8">
           <Reveal>
+            <div id="pricing-trigger"></div>
             <p className="text-center text-[11.5px] font-bold uppercase tracking-[0.24em] text-clay">Pricing</p>
             <h2 className="mt-4 text-center font-display text-4xl tracking-tight text-ink sm:text-[44px]">
               Pay what feels right
