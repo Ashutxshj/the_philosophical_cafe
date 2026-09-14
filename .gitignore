@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local bookings + uploaded payment slips
+/bookings
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

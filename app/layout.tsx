@@ -1,47 +1,39 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { Fraunces, Karla } from "next/font/google";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import StickyBook from "@/components/StickyBook";
 
-const display = Fraunces({
-  variable: "--font-display",
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
-  style: ["normal", "italic"],
-  axes: ["SOFT", "WONK"],
+  axes: ["opsz", "SOFT", "WONK"],
 });
 
-const body = Karla({
-  variable: "--font-body",
+const karla = Karla({
+  variable: "--font-karla",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "The Philosophical Cafe | Chetna · Philosophical Counselor",
+  title: "The Philosophical Cafe — A safe space to unlearn the noise",
   description:
-    "An unhurried hour to sort out the noise. One-on-one philosophical counselling with Chetna, online across India. Pay what feels right.",
-  metadataBase: new URL("https://thephilosophicalcafe.in"),
-  openGraph: {
-    title: "The Philosophical Cafe",
-    description:
-      "An unhurried hour to sort out the noise. Practical philosophy, one conversation at a time.",
-    type: "website",
-    locale: "en_IN",
-  },
+    "One-on-one philosophical counselling with Chetna. Honest, unhurried online conversations for the questions about work, meaning, identity and everything in between. Sessions across India, from ₹300.",
 };
 
-export const viewport: Viewport = {
-  themeColor: "#fcfaf7",
-};
-
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
-      <body>
-        <Nav />
-        {children}
+    <html lang="en">
+      <body className={`${fraunces.variable} ${karla.variable} antialiased`}>
+        <Navbar />
+        <main>{children}</main>
         <Footer />
+        <StickyBook />
       </body>
     </html>
   );
