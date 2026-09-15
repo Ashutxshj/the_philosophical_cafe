@@ -7,11 +7,10 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <div className="flex items-center gap-3">
-              <span className="block h-11 w-11 overflow-hidden rounded-full border border-sand bg-white">
-                <Image src="/tpc_logo.jpeg" alt="" width={44} height={44} className="h-full w-full object-cover" />
+            <div className="flex items-center">
+              <span className="block h-[68px] w-[68px] overflow-hidden border border-sand bg-white">
+                <Image src="/tpc_logo.jpeg" alt="The Philosophical Cafe" width={68} height={68} className="object-cover" />
               </span>
-              <p className="font-display text-lg text-ink">The Philosophical Cafe</p>
             </div>
             <p className="mt-5 max-w-sm text-[15px] leading-relaxed text-mute">
               A thinking relationship. Honest, unhurried conversations for the

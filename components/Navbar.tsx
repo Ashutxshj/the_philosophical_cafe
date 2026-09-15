@@ -42,13 +42,9 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex h-[72px] max-w-6xl items-center justify-between px-5 sm:px-8">
-        <Link href="/" className="group flex items-center gap-3">
-          <span className="block h-10 w-10 overflow-hidden rounded-full border border-sand bg-white  transition-transform duration-500 group-hover:rotate-[14deg]">
-            <Image src="/tpc_logo.jpeg" alt="The Philosophical Cafe" width={40} height={40} className="h-full w-full object-cover" />
-          </span>
-          <span className="font-display text-[17px] leading-tight tracking-tight text-ink">
-            The Philosophical{" "}
-            <span className="italic text-clay">Cafe</span>
+        <Link href="/" className="group flex items-center">
+          <span className="block h-[68px] w-[68px] overflow-hidden border border-sand bg-white shadow-sm transition-transform duration-500 group-hover:rotate-[14deg]">
+            <Image src="/tpc_logo.jpeg" alt="The Philosophical Cafe" width={68} height={68} className="object-cover" />
           </span>
         </Link>
 
