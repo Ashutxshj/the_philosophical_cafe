@@ -156,8 +156,8 @@ export default function AboutPage() {
                 </li>
               </ul>
               <p className="mt-8 border-t border-sand pt-6 text-[13.5px] leading-relaxed text-faint">
-                Research: "Fear of Failure - exploring competition-induced anxiety with an
-                existential lens, navigating through philosophical counselling."
+                Research: &ldquo;Fear of Failure - exploring competition-induced anxiety with an
+                existential lens, navigating through philosophical counselling.&rdquo;
                 <br />
                 Sessions available in Hindi and English.
               </p>

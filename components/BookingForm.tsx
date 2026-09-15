@@ -9,7 +9,7 @@ const ages = ["Under 18", "18–24", "25–34", "35–44", "45–54", "55 and ab
 const roles = ["Student", "Working Professional", "Home maker", "Business Owner", "In between Job Transition", "Other"];
 const groupTypes = ["Friends", "Family", "Classroom", "Team / Colleagues", "Reading circle", "Something else"];
 const sizes = ["2–5 people", "6–12 people", "13–25 people", "25+ people"];
-const slots = ["Morning · 8–11 am", "Midday · 11 am–2 pm", "Afternoon · 2–5 pm", "Evening · 5–8 pm", "Flexible - you pick"];
+const slots = ["Morning · 8–11 am", "Midday · 11 am–2 pm", "Afternoon · 2–5 pm", "Evening · 5–8 pm", "Flexible — you pick"];
 const plans = [
   { amt: "300", note: "a small, honest beginning" },
   { amt: "1000", note: "the usual cup" },
@@ -63,7 +63,7 @@ function StepCard({
   children: React.ReactNode;
 }) {
   return (
-    <section className="slidein rounded-[1.75rem] border border-sand bg-white p-6  sm:p-9">
+    <section className="slidein rounded-[1.75rem] border border-sand bg-white/75 p-6 shadow-[0_20px_50px_-38px_rgba(62,48,32,0.4)] sm:p-9">
       <p className="mb-1.5 text-[11px] font-bold uppercase tracking-[0.22em] text-clay">{step}</p>
       <h3 className="font-display text-[22px] text-ink">{title}</h3>
       <div className="mt-6 space-y-6">{children}</div>
@@ -81,7 +81,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState("");
   const [state, setState] = useState<"idle" | "sending" | "done">("idle");
-  const [tomorrow, setTomorrow] = useState(() => {
+  const [tomorrow] = useState(() => {
     if (typeof window === "undefined") return "";
     const d = new Date();
     d.setDate(d.getDate() + 1);
@@ -129,7 +129,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
 
   if (state === "done") {
     return (
-      <div className="slidein mx-auto max-w-xl rounded-[2rem] border border-sand bg-white p-10 text-center sm:p-14">
+      <div className="slidein mx-auto max-w-xl rounded-[2rem] border border-sand bg-white/80 p-10 text-center sm:p-14">
         <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-cream text-2xl text-sage">
           ✓
         </div>
@@ -222,7 +222,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
         <StepCard step="Step 03" title={individual ? "What is sitting on your mind?" : "What should the conversation hold space for?"}>
           <Appear shown>
             <div>
-              <Label>{individual ? "Core problem - in your own words, there is no wrong way to say it" : "A few lines about the group and what brings you here"}</Label>
+              <Label>{individual ? "Core problem — in your own words, there is no wrong way to say it" : "A few lines about the group and what brings you here"}</Label>
               <textarea
                 className="field min-h-32 resize-y leading-relaxed"
                 placeholder={individual ? "You don't need perfect words. Start anywhere." : "Themes, occasion, what you'd like the group to walk away with…"}
@@ -279,7 +279,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
                   onClick={() => set("plan", p.amt)}
                   className={`rounded-2xl border p-5 text-left transition-all duration-300 ${
                     f.plan === p.amt
-                      ? "border-clay bg-cream "
+                      ? "border-clay bg-cream/80 shadow-[0_14px_30px_-20px_rgba(162,78,51,0.5)]"
                       : "border-sand bg-white hover:border-clay/40"
                   }`}
                 >
@@ -289,7 +289,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
               ))}
             </div>
             <p className="text-[13px] leading-relaxed text-faint">
-              Pricing here is “pay what feels right” - these are only suggestions,
+              Pricing here is “pay what feels right” — these are only suggestions,
               not a price list. You are welcome to adjust the amount on the same UPI id.
             </p>
           </Appear>
@@ -328,7 +328,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
                 ) : (
                   <>
                     <span className="text-[15px] text-ink">Tap to add your receipt</span>
-                    <span className="text-[12.5px] text-faint">PNG or JPG - this confirms your booking</span>
+                    <span className="text-[12.5px] text-faint">PNG or JPG — this confirms your booking</span>
                   </>
                 )}
                 <input
