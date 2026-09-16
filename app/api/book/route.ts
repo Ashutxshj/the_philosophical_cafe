@@ -1,7 +1,7 @@
-﻿import { mkdir, writeFile, appendFile } from "fs/promises";
+import { mkdir, writeFile, appendFile } from "fs/promises";
 import path from "path";
 import { Resend } from "resend";
-import { OwnerEmail } from "@/components/email-template";
+import { ConfirmationEmail, OwnerEmail } from "@/components/email-template";
 import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     const shot = form.get("screenshot");
     if (shot instanceof File && shot.size > 0) {
       const ext = (shot.name.split(".").pop() || "png").toLowerCase().replace(/[^a-z0-9]/g, "");
-      const name = \\-\.\\;
+      const name = `${Date.now()}-${type}.${ext}`;
       const buffer = Buffer.from(await shot.arrayBuffer());
       try { await writeFile(path.join(dir, name), buffer); } catch (e) {}
       data.screenshot = name;
@@ -34,7 +34,7 @@ export async function POST(req: Request) {
       };
     }
 
-    try { await appendFile(path.join(dir, "bookings.jsonl"), JSON.stringify(data) + "\\n"); } catch (e) {}
+    try { await appendFile(path.join(dir, "bookings.jsonl"), JSON.stringify(data) + "\n"); } catch (e) {}
 
     await sendEmails(data, type, attachment);
 
@@ -69,17 +69,15 @@ async function sendEmails(data: Record<string, unknown>, type: string, attachmen
       gsize: str("gsize"),
       problem: str("problem"),
     });
-    
     const { error: err2 } = await resend.emails.send({
       from: "onboarding@resend.dev",
       to: [OWNER],
       replyTo: str("email"),
-      subject: \New \ booking - \\,
+      subject: `New ${type} booking - ${str("name")}`,
       react: Owner,
       attachments: attachment ? [attachment] : undefined,
-      headers: { "Idempotency-Key": \ooking-owner/\\ },
+      headers: { "Idempotency-Key": `booking-owner/${String(data.at)}` },
     });
-    
     if (err2) console.error("Owner email failed:", err2);
   } catch (e) {
     console.error("Email send error:", e);
