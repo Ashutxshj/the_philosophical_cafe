@@ -44,7 +44,7 @@ export async function POST(req: Request) {
   }
 }
 
-async function sendEmails(data: Record<string, unknown>, type: string, attachment: any) {
+async function sendEmails(data: Record<string, unknown>, type: string, attachment: { filename: string; content: Buffer } | undefined) {
   const apiKey = process.env.RESEND_API_KEY || "";
 
   const resend = new Resend(apiKey);
