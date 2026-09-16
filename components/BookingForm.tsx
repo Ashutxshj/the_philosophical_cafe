@@ -5,11 +5,11 @@ import { useState } from "react";
 
 type Variant = "individual" | "group";
 
-const ages = ["Under 18", "18–24", "25–34", "35–44", "45–54", "55 and above"];
+const ages = ["Under 18", "18-24", "25-34", "35-44", "45-54", "55 and above"];
 const roles = ["Student", "Working Professional", "Home maker", "Business Owner", "In between Job Transition", "Other"];
 const groupTypes = ["Friends", "Family", "Classroom", "Team / Colleagues", "Reading circle", "Something else"];
-const sizes = ["2–5 people", "6–12 people", "13–25 people", "25+ people"];
-const slots = ["Morning · 8–11 am", "Midday · 11 am–2 pm", "Afternoon · 2–5 pm", "Evening · 5–8 pm", "Flexible — you pick"];
+const sizes = ["2-5 people", "6-12 people", "13-25 people", "25+ people"];
+const slots = ["Morning · 8-11 am", "Midday · 11 am-2 pm", "Afternoon · 2-5 pm", "Evening · 5-8 pm", "Flexible - you pick"];
 const plans = [
   { amt: "300", note: "a small, honest beginning" },
   { amt: "1000", note: "the usual cup" },
@@ -222,7 +222,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
         <StepCard step="Step 03" title={individual ? "What is sitting on your mind?" : "What should the conversation hold space for?"}>
           <Appear shown>
             <div>
-              <Label>{individual ? "Core problem — in your own words, there is no wrong way to say it" : "A few lines about the group and what brings you here"}</Label>
+              <Label>{individual ? "Core problem - in your own words, there is no wrong way to say it" : "A few lines about the group and what brings you here"}</Label>
               <textarea
                 className="field min-h-32 resize-y leading-relaxed"
                 placeholder={individual ? "You don't need perfect words. Start anywhere." : "Themes, occasion, what you'd like the group to walk away with…"}
@@ -262,7 +262,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
           </Appear>
           <Appear shown={date1Ok}>
             <p className="text-[13px] leading-relaxed text-faint">
-              Two alternate dates help, but one is fine. Sessions run 45–60 minutes on Google Meet.
+              Two alternate dates help, but one is fine. Sessions run 45-60 minutes on Google Meet.
             </p>
           </Appear>
         </StepCard>
@@ -289,7 +289,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
               ))}
             </div>
             <p className="text-[13px] leading-relaxed text-faint">
-              Pricing here is “pay what feels right” — these are only suggestions,
+              Pricing here is “pay what feels right” - these are only suggestions,
               not a price list. You are welcome to adjust the amount on the same UPI id.
             </p>
           </Appear>
@@ -328,7 +328,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
                 ) : (
                   <>
                     <span className="text-[15px] text-ink">Tap to add your receipt</span>
-                    <span className="text-[12.5px] text-faint">PNG or JPG — this confirms your booking</span>
+                    <span className="text-[12.5px] text-faint">PNG or JPG - this confirms your booking</span>
                   </>
                 )}
                 <input
