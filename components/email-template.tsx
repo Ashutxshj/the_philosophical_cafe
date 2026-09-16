@@ -24,15 +24,15 @@ export function ConfirmationEmail({ name, type, plan, date1, time }: Props) {
         </p>
         <div style={{ background: "#f4efe5", borderRadius: 16, padding: "20px 24px", marginTop: 24, fontSize: 14, color: "#2e2a24", lineHeight: 2 }}>
           <strong>Suggested contribution:</strong> ₹{plan}<br />
-          <strong>Preferred date:</strong> {date1 || "—"}<br />
-          <strong>Preferred time:</strong> {time || "—"}
+          <strong>Preferred date:</strong> {date1 || "-"}<br />
+          <strong>Preferred time:</strong> {time || "-"}
         </div>
         <p style={{ fontSize: 14, lineHeight: 1.8, color: "#6f6659", marginTop: 24 }}>
           Anything urgent in the meantime? Just reply to this email or write to{" "}
           <a href="mailto:chetnag480@gmail.com" style={{ color: "#a24e33" }}>chetnag480@gmail.com</a>.
         </p>
         <p style={{ fontSize: 15, color: "#a24e33", fontStyle: "italic", marginTop: 32 }}>
-          — A safe space to unlearn the noise.
+          - A safe space to unlearn the noise.
         </p>
       </div>
     </div>
@@ -43,7 +43,7 @@ export function OwnerEmail(props: Props & { email: string; phone: string; locati
   const row = (k: string, v: string) => (
     <tr key={k}>
       <td style={{ padding: "6px 0", color: "#6f6659", fontSize: 13, width: 140 }}>{k}</td>
-      <td style={{ padding: "6px 0", color: "#2e2a24", fontSize: 13 }}>{v || "—"}</td>
+      <td style={{ padding: "6px 0", color: "#2e2a24", fontSize: 13 }}>{v || "-"}</td>
     </tr>
   );
   return (
@@ -57,7 +57,7 @@ export function OwnerEmail(props: Props & { email: string; phone: string; locati
           {row("Phone", props.phone)}
           {row("Location", props.location)}
           {props.type === "individual" ? row("Age", props.age) : row("Group type", props.gtype)}
-          {props.type === "individual" ? row("Profile", props.roleOther ? `Other — ${props.roleOther}` : props.role) : row("Group size", props.gsize)}
+          {props.type === "individual" ? row("Profile", props.roleOther ? `Other - ${props.roleOther}` : props.role) : row("Group size", props.gsize)}
           {row("Plan", `₹${props.plan}`)}
           {row("Date 1", props.date1)}
           {row("Date 2", props.date2)}

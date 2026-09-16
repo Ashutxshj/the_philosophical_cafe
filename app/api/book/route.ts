@@ -55,7 +55,7 @@ async function sendEmails(data: Record<string, unknown>, type: string, attachmen
       from: "onboarding@resend.dev",
       to: [str("email")],
       replyTo: OWNER,
-      subject: "Your session request is in — The Philosophical Cafe",
+      subject: "Your session request is in - The Philosophical Cafe",
       react: ConfirmationEmail({
         name: str("name"),
         type,
@@ -89,7 +89,7 @@ async function sendEmails(data: Record<string, unknown>, type: string, attachmen
       from: "onboarding@resend.dev",
       to: [OWNER],
       replyTo: str("email"),
-      subject: `New ${type} booking — ${str("name")}`,
+      subject: `New ${type} booking - ${str("name")}`,
       react: Owner,
       attachments: attachment ? [attachment] : undefined,
       headers: { "Idempotency-Key": `booking-owner/${String(data.at)}` },
