@@ -1,7 +1,7 @@
 import { mkdir, writeFile, appendFile } from "fs/promises";
 import path from "path";
 import { Resend } from "resend";
-import { ConfirmationEmail, OwnerEmail } from "@/components/email-template";
+import { OwnerEmail } from "@/components/email-template";
 import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
