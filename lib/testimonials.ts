@@ -28,7 +28,7 @@ export const quotes: Quote[] = [
   },
   {
     text: "The way you ask questions is very different from other psychologists I have interacted with. Most therapists tend to provide methods or techniques directly, but your approach makes me think deeply and challenges me to question my own thoughts and beliefs. I find that process very interesting and engaging.",
-    who: "Well Hope Client",
+    who: "Anonymous",
   },
   {
     text: "Tmse baat krke sch me meri andar ki Chetna jaag gyi h. Thankyou so much for this session.",
@@ -44,7 +44,7 @@ export const quotes: Quote[] = [
   },
   {
     text: "The counsellor was very kind and patient. She listened to all my problems. We spoke about how to challenge intrusive thoughts. The session helped me a lot with reducing them.",
-    who: "Well Hope Client",
+    who: "Anonymous",
   },
   {
     text: "I had three sessions with Chetana, and I am starting to feel better gradually. Chetana creates a comfortable space to share thoughts openly, and I appreciate the support and positivity she brings during sessions.",
@@ -84,7 +84,7 @@ export const quotes: Quote[] = [
   },
   {
     text: "Ma'am ne mujhe bahot acha motivation diya. Ma'am se baat karne se pehle kuch v acha nhi lg rha th but baat karne k bad acha feel kr rhi hu. Tq chetna ma'am.",
-    who: "Well Hope Client",
+    who: "Anonymous",
   },
   {
     text: "The session was good. You seemed empathetic. Overall I felt connected and it seemed you had the idea of the correct situation.",
@@ -92,7 +92,7 @@ export const quotes: Quote[] = [
   },
   {
     text: "Chetna was really good at understanding my situation and it seemed like a hope to me. I hope the best from her side.",
-    who: "Well Hope Client",
+    who: "Anonymous",
   },
   {
     text: "Tbh mai kaafi light or better feel kar rhi hu session khatam hone k baad. Mujhe ye dobara yaad aagya ki meri life ki main character mai khud hu. Aur jo stronger version tha mera, mai usko bhi ab khud mei dekh sakti hu.",
@@ -112,7 +112,7 @@ export const quotes: Quote[] = [
   },
   {
     text: "The counsellor is kind. She understood all my problems, gave me a safe space to express my emotions, identified the areas which I have to work on and guided me. The session was really useful to me.",
-    who: "Well Hope Client",
+    who: "Anonymous",
   },
   {
     text: "A very safe, non-judgmental space was created where I felt heard, understood, and completely at ease while sharing my thoughts. The approach was gentle, patient, and deeply empathetic. I walked away feeling lighter, more aware, and supported.",
@@ -121,10 +121,10 @@ export const quotes: Quote[] = [
   },
   {
     text: "I was experiencing anxiety before joining the sessions. However, after attending them, my anxiety level has reduced significantly. The sessions were very useful and made a positive difference in me.",
-    who: "Well Hope Client",
+    who: "Anonymous",
   },
   {
     text: "The counsellor was very patient and she helped me with reducing my intrusive thoughts. I feel better after the session.",
-    who: "Well Hope Client",
+    who: "Anonymous",
   },
 ];

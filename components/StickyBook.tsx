@@ -44,9 +44,10 @@ export default function StickyBook() {
       <div className="toastin relative flex items-center gap-4 rounded-2xl border border-sand bg-white py-3 pl-4 pr-3  ">
         <div className="max-w-[220px]">
           <p className="text-[13.5px] leading-snug text-ink">
-            Liking the quiet here?
-            <span className="text-mute"> Pull up a chair - first conversation from</span>
-            <span className="font-semibold text-clay"> ₹300</span>
+            Like what you see?
+            <span className="text-mute"> Start with a</span>
+            <span className="font-semibold text-clay"> 15-min intro call at ₹300 </span>
+            <span className="text-mute">— online, on Google Meet.</span>
           </p>
         </div>
         <Link

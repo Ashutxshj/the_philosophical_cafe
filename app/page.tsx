@@ -2,18 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Marquee from "@/components/Marquee";
 import Reveal from "@/components/Reveal";
-
-const areas = [
-  { t: "Career transitions & midlife", d: "Feeling stuck or unfulfilled, even when everything looks fine on paper." },
-  { t: "Existential anxiety", d: "When the worry runs deeper than circumstances and distraction doesn't reach it." },
-  { t: "Moral & ethical dilemmas", d: "Caught between what you want, what you should, and what you believe is right." },
-  { t: "Identity & self-doubt", d: "Recurring patterns in how you think, relate, and choose - and where they begin." },
-  { t: "Grief, loss & relationships", d: "Breakups, endings and the difficult questions that linger after them." },
-  { t: "Meaning & meaninglessness", d: "When achievement stops feeling like enough, and you can't say why." },
-  { t: "Fear of death", d: "Quiet questions about mortality, met with philosophical frameworks instead of platitudes." },
-  { t: "Self-exploration", d: "Who you are, what you value, and how you actually want to live." },
-  { t: "Personal growth & decisions", d: "Structured thinking around the choices that shape your life and sense of self." },
-];
+import { inquiries } from "@/lib/expertise";
 
 const steps = [
   { n: "01", t: "Fill the form", d: "Share a little about what's on your mind. Imperfect words are perfectly welcome." },
@@ -62,7 +51,7 @@ export default function Home() {
               </Link>
             </div>
             <p className="rise mt-7 text-[13px] text-faint" style={{ animationDelay: "460ms" }}>
-              No prior knowledge of philosophy needed · Reply within 24 hours
+              Entirely online on Google Meet · Available across India · No prior knowledge of philosophy needed
             </p>
           </div>
 
@@ -135,15 +124,28 @@ export default function Home() {
             </h2>
           </Reveal>
           <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {areas.map((a, i) => (
-              <Reveal key={a.t} delay={(i % 3) * 90}>
-                <div className="group h-full rounded-[1.4rem] border border-sand bg-paper p-7 transition-all duration-500 hover:-translate-y-1 hover:border-clay/30 hover:bg-white ">
-                  <h3 className="font-display text-[19px] leading-snug text-ink">{a.t}</h3>
-                  <p className="mt-3 text-[14px] leading-relaxed text-mute">{a.d}</p>
-                </div>
+            {inquiries.map((a, i) => (
+              <Reveal key={a.slug} delay={(i % 3) * 90}>
+                <Link href={`/inquiries/${a.slug}`} className="block h-full">
+                  <div className="group h-full rounded-[1.4rem] border border-sand bg-paper p-7 transition-all duration-500 hover:-translate-y-1 hover:border-clay/30 hover:bg-white hover:shadow-[0_24px_44px_-32px_rgba(62,48,32,0.4)]">
+                    <h3 className="font-display text-[19px] leading-snug text-ink">{a.title}</h3>
+                    <p className="mt-3 text-[14px] leading-relaxed text-mute">{a.short}</p>
+                    <p className="mt-5 text-[13px] text-clay opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                      Read more →
+                    </p>
+                  </div>
+                </Link>
               </Reveal>
             ))}
           </div>
+          <Reveal delay={200}>
+            <div className="mt-10 text-center">
+              <Link href="/inquiries" className="inline-flex items-center gap-2 text-[15px] text-clay transition-colors hover:text-maroon">
+                All nine areas, one page
+                <span aria-hidden>→</span>
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -209,22 +211,23 @@ export default function Home() {
             <div id="pricing-trigger"></div>
             <p className="text-center text-[11.5px] font-bold uppercase tracking-[0.24em] text-clay">Pricing</p>
             <h2 className="mt-4 text-center font-display text-4xl tracking-tight text-ink sm:text-[44px]">
-              Pay what feels right
+              Simple, honest pricing
             </h2>
             <p className="mx-auto mt-4 max-w-lg text-center text-[15px] leading-relaxed text-mute">
-              No fixed fee, no judgement. The conversation is what matters - these
-              amounts are only a gentle suggestion.
+              Everything happens online, on Google Meet - bring your questions
+              from anywhere in India. Pick the size that fits.
             </p>
           </Reveal>
           <div className="mx-auto mt-14 grid max-w-3xl gap-5 sm:grid-cols-3">
             {[
-              { amt: "₹300", d: "A beginning - a single honest conversation." },
-              { amt: "₹1,000", d: "The usual cup - the amount most people settle on." },
-              { amt: "₹2,000", d: "Keep the cafe warm - helps someone else afford theirs." },
+              { amt: "₹300", d: "A 15-minute intro call - meet Chetna, ask anything, see if the fit feels right.", n: "Intro call · 15 min" },
+              { amt: "₹1,000", d: "A full one-on-one session - one honest, unhurried conversation.", n: "Session · 45 min" },
+              { amt: "₹2,500", d: "Three sessions together - for the questions that need the longer road.", n: "Three-session pack" },
             ].map((p, i) => (
               <Reveal key={p.amt} delay={i * 120}>
                 <div className="h-full rounded-[1.6rem] border border-sand bg-paper p-7 text-center transition-all duration-500 hover:-translate-y-1 hover:border-clay/30 ">
                   <p className="font-display text-[32px] text-ink">{p.amt}</p>
+                  <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.18em] text-clay">{p.n}</p>
                   <p className="mt-3 text-[13.5px] leading-relaxed text-mute">{p.d}</p>
                 </div>
               </Reveal>
@@ -257,16 +260,18 @@ export default function Home() {
               >
                 Book a session
               </Link>
-              <Link
-                href="/groups"
-                className="rounded-full border border-sand bg-white/60 px-8 py-4 text-[15px] text-mute transition-all duration-300 hover:border-clay/40 hover:text-clay"
+              <button
+                type="button"
+                disabled
+                title="Group sessions are coming soon"
+                className="cursor-not-allowed rounded-full border border-sand bg-white/60 px-8 py-4 text-[15px] text-faint opacity-60"
               >
-                Book for a group
-              </Link>
+                Group sessions — coming soon
+              </button>
             </div>
             <p className="mt-8 text-[13px] text-faint">
               Prefer to write first?{" "}
-              <a href="mailto:chetnag480@gmail.com" className="text-clay underline underline-offset-4">chetnag480@gmail.com</a>
+              <a href="mailto:philosophicalcafe.india@gmail.com" className="text-clay underline underline-offset-4">philosophicalcafe.india@gmail.com</a>
             </p>
           </div>
         </Reveal>

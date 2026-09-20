@@ -11,9 +11,9 @@ const groupTypes = ["Friends", "Family", "Classroom", "Team / Colleagues", "Read
 const sizes = ["2-5 people", "6-12 people", "13-25 people", "25+ people"];
 const slots = ["Morning · 8-11 am", "Midday · 11 am-2 pm", "Afternoon · 2-5 pm", "Evening · 5-8 pm", "Flexible - you pick"];
 const plans = [
-  { amt: "300", note: "a small, honest beginning" },
-  { amt: "1000", note: "the usual cup" },
-  { amt: "2000", note: "keep the cafe warm for others" },
+  { amt: "300", note: "15-minute intro call" },
+  { amt: "1000", note: "45-minute one-on-one session" },
+  { amt: "2500", note: "three-session pack" },
 ];
 
 const emailOk = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
@@ -123,7 +123,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch {
       setState("idle");
-      window.alert("Something went wrong. Please try again, or write to chetnag480@gmail.com.");
+      window.alert("Something went wrong. Please try again, or write to philosophicalcafe.india@gmail.com.");
     }
   };
 
@@ -140,8 +140,8 @@ export default function BookingForm({ variant }: { variant: Variant }) {
         </p>
         <p className="mt-6 text-[13px] text-faint">
           Anything urgent? Write to{" "}
-          <a href="mailto:chetnag480@gmail.com" className="text-clay underline underline-offset-4">
-            chetnag480@gmail.com
+          <a href="mailto:philosophicalcafe.india@gmail.com" className="text-clay underline underline-offset-4">
+            philosophicalcafe.india@gmail.com
           </a>
         </p>
       </div>
@@ -262,14 +262,14 @@ export default function BookingForm({ variant }: { variant: Variant }) {
           </Appear>
           <Appear shown={date1Ok}>
             <p className="text-[13px] leading-relaxed text-faint">
-              Two alternate dates help, but one is fine. Sessions run 45-60 minutes on Google Meet.
+              Two alternate dates help, but one is fine. The ₹300 intro call runs 15 minutes, full sessions run 45 minutes - all online, on Google Meet.
             </p>
           </Appear>
         </StepCard>
       )}
 
       {timeOk && (
-        <StepCard step="Step 05" title="Choose your contribution">
+        <StepCard step="Step 05" title="Choose your session">
           <Appear shown>
             <div className="grid gap-4 sm:grid-cols-3">
               {plans.map((p) => (
@@ -289,8 +289,9 @@ export default function BookingForm({ variant }: { variant: Variant }) {
               ))}
             </div>
             <p className="text-[13px] leading-relaxed text-faint">
-              Pricing here is “pay what feels right” - these are only suggestions,
-              not a price list. You are welcome to adjust the amount on the same UPI id.
+              ₹300 is a 15-minute intro call, ₹1,000 is a full 45-minute session,
+              and ₹2,500 books the three-session pack. If things change later,
+              you can shift the date by writing to us.
             </p>
           </Appear>
         </StepCard>

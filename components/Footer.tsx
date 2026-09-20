@@ -14,10 +14,8 @@ export default function Footer() {
             </div>
             <p className="mt-5 max-w-sm text-[15px] leading-relaxed text-mute">
               A thinking relationship. Honest, unhurried conversations for the
-              questions that do not fit into a quick answer.
-            </p>
-            <p className="mt-6 font-display text-[15px] italic text-clay">
-              Pay what feels right.
+              questions that do not fit into a quick answer. Entirely online,
+              on Google Meet.
             </p>
           </div>
 
@@ -25,11 +23,11 @@ export default function Footer() {
             <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-faint">Say hello</p>
             <ul className="mt-5 space-y-3 text-[15px] text-mute">
               <li>
-                <a href="mailto:chetnag480@gmail.com" className="group flex w-fit items-center gap-2 transition-colors hover:text-clay">
+                <a href="mailto:philosophicalcafe.india@gmail.com" className="group flex w-fit items-center gap-2 transition-colors hover:text-clay">
                   <svg viewBox="0 0 24 24" fill="currentColor" className="h-[18px] w-[18px] text-mute transition-colors group-hover:text-clay">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                   </svg>
-                  <span>chetnag480@gmail.com</span>
+                  <span>philosophicalcafe.india@gmail.com</span>
                 </a>
               </li>
               <li>
@@ -60,7 +58,12 @@ export default function Footer() {
             <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-faint">Wander</p>
             <ul className="mt-5 space-y-3 text-[15px] text-mute">
               <li><Link href="/book" className="transition-colors hover:text-clay">Book a session</Link></li>
-              <li><Link href="/groups" className="transition-colors hover:text-clay">Book for a group</Link></li>
+              <li>
+                <span title="Group sessions are coming soon" className="cursor-not-allowed text-faint">
+                  Group sessions — coming soon
+                </span>
+              </li>
+              <li><Link href="/inquiries" className="transition-colors hover:text-clay">Areas of inquiry</Link></li>
               <li><Link href="/how-it-works" className="transition-colors hover:text-clay">How it works</Link></li>
               <li><Link href="/stories" className="transition-colors hover:text-clay">Client stories</Link></li>
               <li><Link href="/about" className="transition-colors hover:text-clay">About Chetna</Link></li>
@@ -70,7 +73,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col gap-2 border-t border-sand/70 pt-6 text-[13px] text-faint sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} The Philosophical Cafe · Online, across India</p>
-          <p>Sessions on Google Meet · 45-60 minutes</p>
+          <p>Sessions on Google Meet · 15-min intro and 45-min sessions</p>
         </div>
       </div>
     </footer>

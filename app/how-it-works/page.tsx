@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
@@ -29,8 +28,8 @@ const steps = [
   },
   {
     n: "05",
-    t: "Pay what feels right",
-    d: "There is no fixed fee. Before the session you reserve your seat through UPI - ₹300, ₹1,000 or ₹2,000 are suggestions, and you're welcome to adjust the amount. The conversation is what matters.",
+    t: "Choose your session, pay, and it is set",
+    d: "A ₹300 15-minute intro call, a ₹1,000 45-minute one-on-one session, or the ₹2,500 three-session pack. You reserve your seat through UPI, upload a screenshot, and that is it.",
   },
 ];
 
@@ -53,11 +52,15 @@ const faqs = [
   },
   {
     q: "What does a session cost?",
-    a: "Whatever feels right to you. ₹300–₹2,000 is the suggested range; it is not a price list. You reserve your seat via UPI before the session.",
+    a: "A 15-minute intro call is ₹300. A full 45-minute session is ₹1,000. Three sessions together are ₹2,500. You pick the size that fits when you book.",
   },
   {
     q: "How do I pay?",
-    a: "After choosing a contribution on the booking form, you'll see a UPI QR. Scan, pay, and upload a screenshot - that confirms your booking.",
+    a: "After choosing a session on the booking form, you'll see a UPI QR. Scan, pay, and upload a screenshot - that confirms your booking.",
+  },
+  {
+    q: "Do I have to be somewhere specific?",
+    a: "No. Everything happens online on Google Meet, so you can join from anywhere in India - your room, your office, wherever you can think honestly.",
   },
 ];
 
@@ -113,15 +116,15 @@ export default function HowItWorksPage() {
 
         <Reveal>
           <div className="mt-20 text-center">
-            <Link
+            <a
               href="/book"
               className="inline-block rounded-full bg-ink px-8 py-4 text-[15px] tracking-wide text-[#f7f2e9] transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay "
             >
               Begin with the form
-            </Link>
+            </a>
             <p className="mt-5 text-[13px] text-faint">
-              Bringing a group instead?{" "}
-              <Link href="/groups" className="text-clay underline underline-offset-4">Book for a group</Link>
+              Bringing a group instead? Group sessions are coming soon — join the waitlist by writing to{" "}
+              <a href="mailto:philosophicalcafe.india@gmail.com" className="text-clay underline underline-offset-4">philosophicalcafe.india@gmail.com</a>
             </p>
           </div>
         </Reveal>
