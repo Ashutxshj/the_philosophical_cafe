@@ -16,7 +16,7 @@ export default function Home() {
       <section className=" relative overflow-hidden pt-40 pb-24 sm:pt-44">
         <div className="pointer-events-none absolute -top-32 -right-32 h-[420px] w-[420px] rounded-full bg-cream blur-3xl" />
         <div className="pointer-events-none absolute top-64 -left-40 h-[380px] w-[380px] rounded-full bg-[#f0e6d6] blur-3xl" />
-        <div className="relative mx-auto grid max-w-6xl items-center gap-16 px-5 sm:px-8 lg:grid-cols-[1.12fr_0.88fr]">
+        <div className="relative mx-auto grid max-w-[1400px] items-center gap-16 px-6 sm:px-12 md:px-16 lg:grid-cols-[1.12fr_0.88fr]">
           <div>
             <p className="rise text-[11.5px] font-bold uppercase tracking-[0.24em] text-clay">
               One-on-one philosophical counselling · Online, across India
@@ -55,7 +55,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="rise relative mx-auto w-full max-w-sm" style={{ animationDelay: "300ms" }}>
+          <div className="rise relative mx-auto w-full max-w-md lg:max-w-lg" style={{ animationDelay: "300ms" }}>
             <div className="floaty rounded-[2rem] border border-sand bg-white p-3 ">
               <Image
                 src="/chetna-2.jpg"
