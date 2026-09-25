@@ -47,7 +47,7 @@ export default function StickyBook() {
             Like what you see?
             <span className="text-mute"> Start with a</span>
             <span className="font-semibold text-clay"> 15-min intro call at ₹300 </span>
-            <span className="text-mute">— online, on Google Meet.</span>
+            <span className="text-mute">- online, on Google Meet.</span>
           </p>
         </div>
         <Link
