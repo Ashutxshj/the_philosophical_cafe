@@ -41,7 +41,7 @@ export default function Navbar() {
           : "border-b border-transparent bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex h-[100px] max-w-[1536px] items-center justify-between px-6 sm:px-12 md:px-16">
+      <nav className="mx-auto flex h-[100px] max-w-[1400px] items-center justify-between px-6 sm:px-12 md:px-16">
         <Link href="/" className="group flex items-center">
           <span className="block h-[88px] w-[88px] overflow-hidden border border-sand bg-white shadow-sm transition-transform duration-500 group-hover:rotate-[14deg]">
             <Image src="/tpc_logo.jpeg" alt="The Philosophical Cafe" width={88} height={88} className="object-cover" />
