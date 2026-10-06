@@ -12,7 +12,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const q = inquiryBySlug(slug);
-  return { title: q ? `${q.title} — The Philosophical Cafe` : "Area of inquiry" };
+  return { title: q ? `${q.title} - The Philosophical Cafe` : "Area of inquiry" };
 }
 
 export default async function InquiryPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -53,7 +53,7 @@ export default async function InquiryPage({ params }: { params: Promise<{ slug: 
             </div>
             <VideoTalk
               title="What this conversation looks like"
-              caption="Chetna explains, in her own words, how these sessions work — and what one might hold for you."
+              caption="Chetna explains, in her own words, how these sessions work - and what one might hold for you."
             />
           </div>
         </Reveal>
@@ -75,7 +75,7 @@ export default async function InquiryPage({ params }: { params: Promise<{ slug: 
               </Link>
             </div>
             <p className="mt-7 text-[13px] leading-relaxed text-faint">
-              Entirely online, on Google Meet — bring your questions from anywhere in India.
+              Entirely online, on Google Meet - bring your questions from anywhere in India.
             </p>
           </div>
         </Reveal>

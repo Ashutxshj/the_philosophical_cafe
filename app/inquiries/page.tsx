@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import { inquiries } from "@/lib/expertise";
 
 export const metadata: Metadata = {
-  title: "Areas of inquiry — The Philosophical Cafe",
+  title: "Areas of inquiry - The Philosophical Cafe",
   description: "There is no wrong question to arrive with. Explore the nine areas people bring to the cafe.",
 };
 
@@ -18,7 +18,7 @@ export default function InquiriesPage() {
             There is no wrong question to arrive with.
           </h1>
           <p className="mt-5 max-w-xl text-[15.5px] leading-[1.85] text-mute">
-            Often people don&rsquo;t know exactly what they need — they simply know something
+            Often people don&rsquo;t know exactly what they need - they simply know something
             doesn&rsquo;t feel right. These are the nine places people most often begin.
           </p>
         </Reveal>

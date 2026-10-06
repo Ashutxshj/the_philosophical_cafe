@@ -32,7 +32,7 @@ export function ConfirmationEmail({ name, type, plan, date1, time }: Props) {
           <a href="mailto:philosophicalcafe.india@gmail.com" style={{ color: "#a24e33" }}>philosophicalcafe.india@gmail.com</a>.
         </p>
         <p style={{ fontSize: 15, color: "#a24e33", fontStyle: "italic", marginTop: 32 }}>
-          — A safe space to unlearn the noise.
+          - A safe space to unlearn the noise.
         </p>
       </div>
     </div>
@@ -57,7 +57,7 @@ export function OwnerEmail(props: Props & { email: string; phone: string; locati
           {row("Phone", props.phone)}
           {row("Location", props.location)}
           {props.type === "individual" ? row("Age", props.age) : row("Group type", props.gtype)}
-          {props.type === "individual" ? row("Profile", props.roleOther ? `Other — ${props.roleOther}` : props.role) : row("Group size", props.gsize)}
+          {props.type === "individual" ? row("Profile", props.roleOther ? `Other - ${props.roleOther}` : props.role) : row("Group size", props.gsize)}
           {row("Plan", `₹${props.plan}`)}
           {row("Date 1", props.date1)}
           {row("Date 2", props.date2)}

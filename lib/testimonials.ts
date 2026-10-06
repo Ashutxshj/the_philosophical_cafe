@@ -69,7 +69,7 @@ export const quotes: Quote[] = [
     context: "4 sessions",
   },
   {
-    text: "I didn't come looking for a solution to one specific problem — I came to understand the whole loop of what has been happening with me. Your sessions have helped me understand a lot, and honestly I feel calm and peaceful because tangled things started finding clearer answers.",
+    text: "I didn't come looking for a solution to one specific problem - I came to understand the whole loop of what has been happening with me. Your sessions have helped me understand a lot, and honestly I feel calm and peaceful because tangled things started finding clearer answers.",
     who: "Anonymous",
     context: "ongoing sessions",
   },

@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "How it works — The Philosophical Cafe",
+  title: "How it works - The Philosophical Cafe",
 };
 
 const steps = [
   {
     n: "01",
     t: "You fill the form",
-    d: "A few gentle questions — who you are, what's sitting on your mind, when you could talk. You don't need the perfect words or a perfectly defined problem. Half-formed feelings are exactly what this space is for.",
+    d: "A few gentle questions - who you are, what's sitting on your mind, when you could talk. You don't need the perfect words or a perfectly defined problem. Half-formed feelings are exactly what this space is for.",
   },
   {
     n: "02",
@@ -19,7 +19,7 @@ const steps = [
   {
     n: "03",
     t: "The session, on Google Meet",
-    d: "One-on-one, online, anywhere in India. A quiet 45–60 minutes where we take your question seriously — examining the beliefs, assumptions and patterns underneath it, rather than rushing to fix it.",
+    d: "One-on-one, online, anywhere in India. A quiet 45-60 minutes where we take your question seriously - examining the beliefs, assumptions and patterns underneath it, rather than rushing to fix it.",
   },
   {
     n: "04",
@@ -36,7 +36,7 @@ const steps = [
 const faqs = [
   {
     q: "Do I need to know philosophy?",
-    a: "Not at all. No prior knowledge of philosophy is needed — only a willingness to think honestly. The ideas are translated into plain language as we go.",
+    a: "Not at all. No prior knowledge of philosophy is needed - only a willingness to think honestly. The ideas are translated into plain language as we go.",
   },
   {
     q: "Is this therapy?",
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "Is this coaching?",
-    a: "Also no. There are no goals handed to you or productivity systems to adopt. The work is to understand what you actually believe and want — the direction follows from that.",
+    a: "Also no. There are no goals handed to you or productivity systems to adopt. The work is to understand what you actually believe and want - the direction follows from that.",
   },
   {
     q: "What if I don't know what's wrong?",
@@ -56,11 +56,11 @@ const faqs = [
   },
   {
     q: "How do I pay?",
-    a: "After choosing a session on the booking form, you'll see a UPI QR. Scan, pay, and upload a screenshot — that confirms your booking.",
+    a: "After choosing a session on the booking form, you'll see a UPI QR. Scan, pay, and upload a screenshot - that confirms your booking.",
   },
   {
     q: "Do I have to be somewhere specific?",
-    a: "No. Everything happens online on Google Meet, so you can join from anywhere in India — your room, your office, wherever you can think honestly.",
+    a: "No. Everything happens online on Google Meet, so you can join from anywhere in India - your room, your office, wherever you can think honestly.",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function HowItWorksPage() {
               How a session unfolds
             </h1>
             <p className="mt-5 text-[15.5px] leading-[1.85] text-mute">
-              From the first form to the last question — here is the whole journey,
+              From the first form to the last question - here is the whole journey,
               with nothing hidden.
             </p>
           </div>
@@ -123,7 +123,7 @@ export default function HowItWorksPage() {
               Begin with the form
             </a>
             <p className="mt-5 text-[13px] text-faint">
-              Bringing a group instead? Group sessions are coming soon — join the waitlist by writing to{" "}
+              Bringing a group instead? Group sessions are coming soon - join the waitlist by writing to{" "}
               <a href="mailto:philosophicalcafe.india@gmail.com" className="text-clay underline underline-offset-4">philosophicalcafe.india@gmail.com</a>
             </p>
           </div>

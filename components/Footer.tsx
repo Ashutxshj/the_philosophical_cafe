@@ -60,7 +60,7 @@ export default function Footer() {
               <li><Link href="/book" className="transition-colors hover:text-clay">Book a session</Link></li>
               <li>
                 <span title="Group sessions are coming soon" className="cursor-not-allowed text-faint">
-                  Group sessions — coming soon
+                  Group sessions - coming soon
                 </span>
               </li>
               <li><Link href="/inquiries" className="transition-colors hover:text-clay">Areas of inquiry</Link></li>

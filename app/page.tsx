@@ -6,7 +6,7 @@ import { inquiries } from "@/lib/expertise";
 const steps = [
   { n: "01", t: "Fill the form", d: "Share a little about what's on your mind. Imperfect words are perfectly welcome." },
   { n: "02", t: "We pick a time", d: "Chetna replies within 24 hours and the session is set on Google Meet." },
-  { n: "03", t: "The conversation begins", d: "45–60 minutes of honest, unhurried thinking together." },
+  { n: "03", t: "The conversation begins", d: "45-60 minutes of honest, unhurried thinking together." },
 ];
 
 const pricing = [
@@ -21,14 +21,14 @@ export default function Home() {
       <section className="mx-auto grid max-w-[1400px] items-center gap-16 px-6 pt-40 pb-24 sm:px-12 md:px-16 lg:grid-cols-[1.12fr_0.88fr]">
         <div>
           <p className="text-[14px] italic text-mute">
-            One-on-one philosophical counselling — online, across India
+            One-on-one philosophical counselling - online, across India
           </p>
           <h1 className="mt-6 font-display text-[46px] leading-[1.08] tracking-tight text-ink sm:text-6xl">
             A safe space to
             <span className="block italic text-clay">unlearn the noise.</span>
           </h1>
           <p className="mt-7 max-w-lg text-[16.5px] leading-[1.85] text-mute">
-            Bring the questions about work, meaning, identity, relationships —
+            Bring the questions about work, meaning, identity, relationships -
             or simply the feeling that something is off. We think through them
             together, honestly and unhurried. No quick answers, no labels.
           </p>
@@ -99,7 +99,7 @@ export default function Home() {
             There is no wrong question to arrive with.
           </h2>
           <p className="mt-4 max-w-lg text-[15px] leading-relaxed text-mute">
-            Nine areas of inquiry. Many people arrive knowing only that something does not feel right — that is enough.
+            Nine areas of inquiry. Many people arrive knowing only that something does not feel right - that is enough.
           </p>
           <ol className="mt-12 border-t border-sand">
             {inquiries.map((a, i) => (
@@ -164,7 +164,7 @@ export default function Home() {
             <h2 className="font-display text-4xl tracking-tight text-ink">Hello, I&rsquo;m Chetna.</h2>
             <p className="mt-5 max-w-xl text-[15.5px] leading-[1.85] text-mute">
               My journey into philosophy began with a search for answers, but I discovered
-              something far more powerful — the art of asking the right questions. I&rsquo;m a
+              something far more powerful - the art of asking the right questions. I&rsquo;m a
               certified philosophical counsellor, and I hold this space so you can challenge
               conditioned beliefs and declutter your mind, at your own pace.
             </p>
@@ -184,7 +184,7 @@ export default function Home() {
             Simple, honest pricing
           </h2>
           <p className="mt-4 max-w-lg text-[15px] leading-relaxed text-mute">
-            Everything happens online, on Google Meet — bring your questions
+            Everything happens online, on Google Meet - bring your questions
             from anywhere in India. Pick the size that fits.
           </p>
           <div className="mt-12 border-t border-sand">
@@ -217,7 +217,7 @@ export default function Home() {
             >
               Book a session
             </Link>
-            <span className="text-[14px] text-faint">Group sessions — coming soon</span>
+            <span className="text-[14px] text-faint">Group sessions - coming soon</span>
           </div>
           <p className="mt-8 text-[13px] text-faint">
             Prefer to write first?{" "}

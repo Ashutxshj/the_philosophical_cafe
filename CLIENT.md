@@ -109,7 +109,7 @@ Instead, the focus is on understanding the beliefs, assumptions, thoughts, and q
 
 It is a:
 
-> **Thinking relationship — an honest, unhurried conversation.**
+> **Thinking relationship - an honest, unhurried conversation.**
 
 ---
 
@@ -162,7 +162,7 @@ University of Kerala
 
 ### Academic Qualification
 
-**UGC NET Qualified — Philosophy**
+**UGC NET Qualified - Philosophy**
 
 Years listed on the website:
 
@@ -296,7 +296,7 @@ Structured philosophical thinking around decisions that influence:
 
 # 9. How Sessions Work
 
-## Step 1 — Fill the Form
+## Step 1 - Fill the Form
 
 The client shares a little about what is on their mind.
 
@@ -304,7 +304,7 @@ They do not need to have the perfect words or a perfectly defined problem.
 
 ---
 
-## Step 2 — Schedule a Session
+## Step 2 - Schedule a Session
 
 The session is:
 
@@ -315,11 +315,11 @@ The session is:
 
 ---
 
-## Step 3 — The Conversation Begins
+## Step 3 - The Conversation Begins
 
 Each session lasts approximately:
 
-**45–60 minutes**
+**45-60 minutes**
 
 The intention is to leave the conversation with more clarity than before.
 
@@ -333,7 +333,7 @@ The intention is to leave the conversation with more clarity than before.
 | Location             | Online                        |
 | Platform             | Google Meet                   |
 | Availability         | Anywhere in India             |
-| Duration             | 45–60 minutes                |
+| Duration             | 45-60 minutes                |
 | Philosophy Knowledge | No prior knowledge required   |
 | Requirement          | Willingness to think honestly |
 
@@ -358,7 +358,7 @@ The website communicates:
 
 ### Displayed Range
 
-**₹300 – ₹2,000 per session**
+**₹300 - ₹2,000 per session**
 
 Important: this should **not** be presented as a fixed price list. It is a suggested/displayed range within the pay-what-you-can model.
 
@@ -382,7 +382,7 @@ She describes the work as noble.
 
 ---
 
-## Anonymous — Referred by a Friend
+## Anonymous - Referred by a Friend
 
 The client describes feeling:
 
@@ -396,7 +396,7 @@ They particularly appreciated having a safe space where they could talk openly.
 
 ---
 
-## Anonymous — Ongoing Sessions
+## Anonymous - Ongoing Sessions
 
 The client says the sessions helped them understand the full loop of what they were experiencing.
 
@@ -409,7 +409,7 @@ because tangled thoughts and experiences began finding clearer answers.
 
 ---
 
-## Anonymous — 5 Sessions
+## Anonymous - 5 Sessions
 
 The sessions helped the client develop a better understanding of:
 
@@ -420,7 +420,7 @@ They also found the pattern-breaking exercises useful for learning to see their 
 
 ---
 
-## Ayush — PhD Interview Preparation
+## Ayush - PhD Interview Preparation
 
 Ayush describes Chetna as someone who understood both him and his work.
 
@@ -433,7 +433,7 @@ The session helped him:
 
 ---
 
-## Akshay — 3 Sessions
+## Akshay - 3 Sessions
 
 Akshay describes the sessions as providing:
 
@@ -576,8 +576,8 @@ The current website represents the business through the following content struct
 7. **Pricing**
 
    * Pay what you can
-   * ₹300–₹2,000 displayed range
-   * 45–60 minute sessions
+   * ₹300-₹2,000 displayed range
+   * 45-60 minute sessions
 8. **Booking**
 
    * Google Form
@@ -598,13 +598,13 @@ The following should remain consistent when rebuilding the website:
 * Sessions are online.
 * Google Meet is used.
 * Service is available across India.
-* Sessions last approximately 45–60 minutes.
+* Sessions last approximately 45-60 minutes.
 * Clients do not need prior knowledge of philosophy.
 * Clients should be willing to think honestly.
 * The service should not be described as conventional therapy.
 * The service should not be described as conventional coaching.
 * Pricing is pay-what-you-can / pay-what-feels-right.
-* ₹300–₹2,000 is a displayed range, not a mandatory fixed fee.
+* ₹300-₹2,000 is a displayed range, not a mandatory fixed fee.
 * Booking currently happens through a Google Form.
 * Chetna currently says she responds within 24 hours after form submission.
 
