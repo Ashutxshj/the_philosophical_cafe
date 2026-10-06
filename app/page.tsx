@@ -21,14 +21,14 @@ export default function Home() {
       <section className="mx-auto grid max-w-[1400px] items-center gap-16 px-6 pt-40 pb-24 sm:px-12 md:px-16 lg:grid-cols-[1.12fr_0.88fr]">
         <div>
           <p className="text-[14px] italic text-mute">
-            One-on-one philosophical counselling — online, across India
+            One-on-one philosophical counselling · Online, across India
           </p>
           <h1 className="mt-6 font-display text-[46px] leading-[1.08] tracking-tight text-ink sm:text-6xl">
             A safe space to
             <span className="block italic text-clay">unlearn the noise.</span>
           </h1>
           <p className="mt-7 max-w-lg text-[16.5px] leading-[1.85] text-mute">
-            Bring the questions about work, meaning, identity, relationships —
+            Bring the questions about work, meaning, identity, relationships,
             or simply the feeling that something is off. We think through them
             together, honestly and unhurried. No quick answers, no labels.
           </p>
@@ -99,13 +99,13 @@ export default function Home() {
             There is no wrong question to arrive with.
           </h2>
           <p className="mt-4 max-w-lg text-[15px] leading-relaxed text-mute">
-            Nine areas of inquiry. Many people arrive knowing only that something does not feel right — that is enough.
+            Nine areas of inquiry. Many people arrive knowing only that something does not feel right. That is enough.
           </p>
           <ol className="mt-12 border-t border-sand">
             {inquiries.map((a, i) => (
               <li key={a.slug} className="border-b border-sand">
                 <Link href={`/inquiries/${a.slug}`} className="group flex items-baseline gap-6 py-5 sm:gap-10">
-                  <span className="w-7 shrink-0 text-[13px] text-faint">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="w-7 shrink-0 text-[13px] font-bold text-ochre">{String(i + 1).padStart(2, "0")}</span>
                   <span className="font-display text-[21px] leading-snug text-ink transition-colors duration-300 group-hover:text-clay">
                     {a.title}
                   </span>
@@ -134,7 +134,7 @@ export default function Home() {
           <div className="mt-12 grid gap-10 md:grid-cols-3">
             {steps.map((s) => (
               <div key={s.n}>
-                <span className="font-display text-[20px] italic text-clay">{s.n}</span>
+                <span className="font-display text-[20px] italic text-ochre">{s.n}</span>
                 <h3 className="mt-3 font-display text-[21px] text-ink">{s.t}</h3>
                 <p className="mt-2.5 max-w-xs text-[14.5px] leading-relaxed text-mute">{s.d}</p>
               </div>
@@ -164,7 +164,7 @@ export default function Home() {
             <h2 className="font-display text-4xl tracking-tight text-ink">Hello, I&rsquo;m Chetna.</h2>
             <p className="mt-5 max-w-xl text-[15.5px] leading-[1.85] text-mute">
               My journey into philosophy began with a search for answers, but I discovered
-              something far more powerful — the art of asking the right questions. I&rsquo;m a
+              something far more powerful: the art of asking the right questions. I&rsquo;m a
               certified philosophical counsellor, and I hold this space so you can challenge
               conditioned beliefs and declutter your mind, at your own pace.
             </p>
@@ -184,13 +184,13 @@ export default function Home() {
             Simple, honest pricing
           </h2>
           <p className="mt-4 max-w-lg text-[15px] leading-relaxed text-mute">
-            Everything happens online, on Google Meet — bring your questions
-            from anywhere in India. Pick the size that fits.
+            Everything happens online, on Google Meet. Bring your questions
+            from anywhere in India, and pick the size that fits.
           </p>
           <div className="mt-12 border-t border-sand">
             {pricing.map((p) => (
               <div key={p.amt} className="flex flex-wrap items-baseline gap-x-10 gap-y-1 border-b border-sand py-6">
-                <p className="w-40 shrink-0 font-display text-[26px] text-ink">{p.amt}</p>
+                <p className="w-40 shrink-0 font-display text-[26px] text-clay">{p.amt}</p>
                 <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-clay">{p.n}</p>
                 <p className="text-[14px] leading-relaxed text-mute sm:ml-auto sm:max-w-xs sm:text-right">{p.d}</p>
               </div>
@@ -217,7 +217,7 @@ export default function Home() {
             >
               Book a session
             </Link>
-            <span className="text-[14px] text-faint">Group sessions — coming soon</span>
+            <span className="text-[14px] text-faint">Group sessions (coming soon)</span>
           </div>
           <p className="mt-8 text-[13px] text-faint">
             Prefer to write first?{" "}

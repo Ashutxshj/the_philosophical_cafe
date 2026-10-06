@@ -5,11 +5,12 @@
   --color-cream: #f4efe5;
   --color-sand: #e8e0cf;
   --color-ink: #2e2a24;
-  --color-mute: #6f6659;
-  --color-faint: #9a9081;
+  --color-mute: #5b5142;
+  --color-faint: #837767;
   --color-clay: #a24e33;
   --color-maroon: #7e2d26;
-  --color-sage: #6e7a5c;
+  --color-sage: #5f7048;
+  --color-ochre: #b07a1e;
   --font-display: var(--font-alegreya);
   --font-body: var(--font-karla);
 }

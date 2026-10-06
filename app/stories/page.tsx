@@ -25,7 +25,7 @@ export default function StoriesPage() {
               In their words
             </h1>
             <p className="mt-5 text-[15.5px] leading-[1.85] text-mute">
-              Over a hundred conversations so far. Some names are withheld — the people
+              Over a hundred conversations so far. Some names are withheld; the people
               asked, and the cafe keeps its quiet.
             </p>
           </div>
@@ -48,7 +48,7 @@ export default function StoriesPage() {
               Every note, exactly as it arrived
             </h2>
             <p className="mt-4 text-[14.5px] leading-[1.85] text-mute">
-              Screenshots of the original feedback — unedited, unpolished, and
+              Screenshots of the original feedback: unedited, unpolished, and
               kept with permission.
             </p>
           </div>
