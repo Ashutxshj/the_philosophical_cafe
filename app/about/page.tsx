@@ -4,7 +4,7 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "About Chetna - The Philosophical Cafe",
+  title: "About Chetna — The Philosophical Cafe",
   description:
     "Chetna is a certified philosophical counsellor (M.A. Philosophy, JNU) helping people challenge conditioned beliefs and declutter their minds.",
 };
@@ -13,8 +13,8 @@ const credentials = [
   { t: "M.A. Philosophy", d: "Jawaharlal Nehru University, New Delhi" },
   { t: "Certified Philosophical Counsellor", d: "Philosophical Practitioner Association of India" },
   { t: "Diploma in Philosophical Counselling", d: "University of Kerala" },
-  { t: "UGC NET - Philosophy", d: "Qualified, 2021 through 2024" },
-  { t: "GATE - Philosophy", d: "All India Rank 72, 2022" },
+  { t: "UGC NET — Philosophy", d: "Qualified, 2021 through 2024" },
+  { t: "GATE — Philosophy", d: "All India Rank 72, 2022" },
 ];
 
 const approaches = [
@@ -44,7 +44,7 @@ export default function AboutPage() {
                 className="aspect-[4/5] w-full rounded-[2rem] border border-sand object-cover "
               />
               <div className="absolute -bottom-6 -right-4 rotate-2 rounded-2xl border border-sand bg-[#fffdf8] px-5 py-3 ">
-                <p className="font-display text-[14px] italic text-clay">Chetna - she runs the cafe</p>
+                <p className="font-display text-[14px] italic text-clay">Chetna — she runs the cafe</p>
               </div>
             </div>
           </Reveal>
@@ -57,14 +57,14 @@ export default function AboutPage() {
               <div className="mt-7 space-y-5 text-[15.5px] leading-[1.9] text-mute">
                 <p>
                   My journey into philosophy began with a search for answers, but I discovered
-                  something far more powerful - the art of asking the right questions. I&rsquo;m Chetna,
+                  something far more powerful — the art of asking the right questions. I&rsquo;m Chetna,
                   a philosophical counsellor dedicated to helping you challenge conditioned
                   beliefs and declutter your mind.
                 </p>
                 <p>
                   I believe our lives are shaped by our thoughts, decisions, and attitudes.
                   Through guided reflection we can understand these, and that understanding
-                  becomes the ground from which authentic peace - and eventually happiness - grows.
+                  becomes the ground from which authentic peace — and eventually happiness — grows.
                   My approach is not about quick fixes or promising constant happiness.
                 </p>
                 <p>
@@ -99,7 +99,7 @@ export default function AboutPage() {
             <h2 className="font-display text-3xl text-ink">Ways of working</h2>
             <p className="mt-3 max-w-xl text-[14.5px] leading-relaxed text-mute">
               A quiet toolkit, drawn from different traditions and chosen for the
-              person in front of me - never the other way around.
+              person in front of me — never the other way around.
             </p>
             <div className="mt-7 flex flex-wrap gap-2.5">
               {approaches.map((a) => (
@@ -115,9 +115,9 @@ export default function AboutPage() {
           <div className="mt-20 grid gap-10 lg:grid-cols-[1fr_1fr]">
             <div>
               <h2 className="font-display text-3xl text-ink">Areas of expertise</h2>
-              <ul className="mt-7 grid grid-cols-1 gap-x-8 gap-y-3.5 sm:grid-cols-2">
+              <ul className="mt-7 grid grid-cols-2 gap-x-6 gap-y-3">
                 {expertise.map((e) => (
-                  <li key={e} className="flex items-start gap-3 text-[14.5px] text-mute">
+                  <li key={e} className="flex items-start gap-2.5 text-[16px] font-semibold leading-snug text-mute">
                     <span className="mt-[9px] h-1 w-1 shrink-0 rounded-full bg-clay" />
                     {e}
                   </li>
@@ -156,7 +156,7 @@ export default function AboutPage() {
                 </li>
               </ul>
               <p className="mt-8 border-t border-sand pt-6 text-[13.5px] leading-relaxed text-faint">
-                Research: &ldquo;Fear of Failure - exploring competition-induced anxiety with an
+                Research: &ldquo;Fear of Failure — exploring competition-induced anxiety with an
                 existential lens, navigating through philosophical counselling.&rdquo;
                 <br />
                 Sessions available in Hindi and English.

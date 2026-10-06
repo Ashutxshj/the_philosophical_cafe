@@ -3,7 +3,7 @@ import BookingForm from "@/components/BookingForm";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Book for a group - The Philosophical Cafe",
+  title: "Book for a group — The Philosophical Cafe",
 };
 
 export default function GroupsPage() {
@@ -18,7 +18,7 @@ export default function GroupsPage() {
               A table for many
             </h1>
             <p className="mt-5 text-[15.5px] leading-[1.85] text-mute">
-              For classrooms, teams, friend circles and reading groups - a guided
+              For classrooms, teams, friend circles and reading groups — a guided
               philosophical conversation, held together. Same unhurried style,
               sized for your group.
             </p>

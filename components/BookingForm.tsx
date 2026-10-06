@@ -9,7 +9,7 @@ const ages = ["Under 18", "18-24", "25-34", "35-44", "45-54", "55 and above"];
 const roles = ["Student", "Working Professional", "Home maker", "Business Owner", "In between Job Transition", "Other"];
 const groupTypes = ["Friends", "Family", "Classroom", "Team / Colleagues", "Reading circle", "Something else"];
 const sizes = ["2-5 people", "6-12 people", "13-25 people", "25+ people"];
-const slots = ["Morning · 8-11 am", "Midday · 11 am-2 pm", "Afternoon · 2-5 pm", "Evening · 5-8 pm", "Flexible - you pick"];
+const slots = ["Morning · 8-11 am", "Midday · 11 am-2 pm", "Afternoon · 2-5 pm", "Evening · 5-8 pm", "Flexible — you pick"];
 const plans = [
   { amt: "300", note: "15-minute intro call" },
   { amt: "1000", note: "45-minute one-on-one session" },
@@ -97,7 +97,6 @@ export default function BookingForm({ variant }: { variant: Variant }) {
   const ageOk = Boolean(f.age);
   const roleOk = Boolean(individual ? f.role && (f.role !== "Other" || f.roleOther.trim()) : f.gtype);
   const gsizeOk = Boolean(individual ? true : f.gsize);
-  const problemOk = f.problem.trim().length > 3;
   const date1Ok = Boolean(f.date1);
   const date2Ok = Boolean(f.date2);
   const timeOk = Boolean(f.time);
@@ -222,7 +221,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
         <StepCard step="Step 03" title={individual ? "What is sitting on your mind?" : "What should the conversation hold space for?"}>
           <Appear shown>
             <div>
-              <Label>{individual ? "Core problem - in your own words, there is no wrong way to say it" : "A few lines about the group and what brings you here"}</Label>
+              <Label>{individual ? "Core problem — in your own words, there is no wrong way to say it" : "A few lines about the group and what brings you here"} <span className="normal-case tracking-normal">(optional)</span></Label>
               <textarea
                 className="field min-h-32 resize-y leading-relaxed"
                 placeholder={individual ? "You don't need perfect words. Start anywhere." : "Themes, occasion, what you'd like the group to walk away with…"}
@@ -234,7 +233,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
         </StepCard>
       )}
 
-      {problemOk && (
+      {roleOk && gsizeOk && (
         <StepCard step="Step 04" title="When could we talk?">
           <Appear shown>
             <div>
@@ -262,7 +261,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
           </Appear>
           <Appear shown={date1Ok}>
             <p className="text-[13px] leading-relaxed text-faint">
-              Two alternate dates help, but one is fine. The ₹300 intro call runs 15 minutes, full sessions run 45 minutes - all online, on Google Meet.
+              Two alternate dates help, but one is fine. The ₹300 intro call runs 15 minutes, full sessions run 45 minutes — all online, on Google Meet.
             </p>
           </Appear>
         </StepCard>
@@ -329,7 +328,7 @@ export default function BookingForm({ variant }: { variant: Variant }) {
                 ) : (
                   <>
                     <span className="text-[15px] text-ink">Tap to add your receipt</span>
-                    <span className="text-[12.5px] text-faint">PNG or JPG - this confirms your booking</span>
+                    <span className="text-[12.5px] text-faint">PNG or JPG — this confirms your booking</span>
                   </>
                 )}
                 <input

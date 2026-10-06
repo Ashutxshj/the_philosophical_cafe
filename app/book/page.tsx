@@ -3,7 +3,7 @@ import BookingForm from "@/components/BookingForm";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Book a session - The Philosophical Cafe",
+  title: "Book a session — The Philosophical Cafe",
 };
 
 export default function BookPage() {
@@ -18,7 +18,7 @@ export default function BookPage() {
               Reserve a table for one
             </h1>
             <p className="mt-5 text-[15.5px] leading-[1.85] text-mute">
-              Take it one step at a time - new questions appear only as you finish
+              Take it one step at a time — new questions appear only as you finish
               the earlier ones. Nothing here needs perfect words.
             </p>
           </div>

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Fraunces, Karla } from "next/font/google";
+import { Alegreya, Karla } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyBook from "@/components/StickyBook";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const display = Alegreya({
+  variable: "--font-alegreya",
   subsets: ["latin"],
-  axes: ["opsz", "SOFT", "WONK"],
+  style: ["normal", "italic"],
 });
 
 const karla = Karla({
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body className={`${fraunces.variable} ${karla.variable} antialiased`}>
+      <body className={`${display.variable} ${karla.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
